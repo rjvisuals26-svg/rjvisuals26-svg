@@ -86,10 +86,6 @@ I work on projects that blend **technical excellence** with **thoughtful design*
 
 ## Let's Connect
 
----
-
-## Let's Connect
-
 <div align="center">
 
 <p style="font-size: 16px; margin-bottom: 20px;"><strong>I'm always open to discussing new projects, creative ideas, and opportunities to build something meaningful.</strong></p>
