@@ -7,7 +7,7 @@
 <p align="center">
   <a href="#about"><img src="https://img.shields.io/badge/About-informational?style=flat&color=3498db" /></a>
   <a href="#tech-stack"><img src="https://img.shields.io/badge/Tech%20Stack-3498db?style=flat" /></a>
-  <a href="#projects"><img src="https://img.shields.io/badge/Featured%20Work-3498db?style=flat" /></a>
+  <a href="#featured-projects"><img src="https://img.shields.io/badge/Featured%20Work-3498db?style=flat" /></a>
   <a href="#connect"><img src="https://img.shields.io/badge/Let's%20Connect-3498db?style=flat" /></a>
 </p>
 
@@ -45,36 +45,17 @@ My focus areas include:
 
 ---
 
-## Professional Highlights
-
-- ✅ **Full-Stack Development** – End-to-end web application development from concept to deployment
-- ✅ **Scalable Architecture** – Building applications designed to handle growth and complexity
-- ✅ **UI/UX Excellence** – Combining aesthetic design with intuitive user experiences
-- ✅ **Performance Engineering** – Optimization for speed, responsiveness, and seamless interactions
-- ✅ **Collaborative Development** – Version control, agile workflows, and cross-functional teamwork
-
----
-
-## GitHub Analytics
-
-<div align="center">
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=rjvisuals26-svg&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats" />
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rjvisuals26-svg&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
-
-<br>
-
-<img width="90%" src="https://github-readme-activity-graph.vercel.app/graph?username=rjvisuals26-svg&bg_color=0d1117&color=58a6ff&line=30363d&point=58a6ff&area=true&hide_border=true&custom_title=Contribution%20Activity" alt="Activity Graph" />
-
-</div>
-
----
-
 ## Featured Projects
 
-I work on projects that blend **technical excellence** with **thoughtful design**. Browse my repositories to see implementations of:
+I work on projects that blend **technical excellence** with **thoughtful design**:
 
+- **E-Commerce Platform** – Full-stack e-commerce solution with cart management, user authentication, and payment integration. *(React, Node.js, MongoDB, Stripe)*
+
+- **Analytics Dashboard** – Interactive dashboard for data visualization with real-time updates and responsive design. *(Next.js, TypeScript, Chart.js, Tailwind)*
+
+- **Task Management App** – Collaborative task management with drag-and-drop, teams, and real-time sync. *(React, Firebase, Context API, Framer Motion)*
+
+Browse my repositories to see implementations of:
 - Full-stack MERN applications
 - Responsive, user-centered interfaces
 - RESTful API design and architecture
