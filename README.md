@@ -1,96 +1,107 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:2c3e50,20:34495e,40:3498db,60:2980b9,80:1abc9c,100:16a085&height=280&section=header&text=Rukhsar%20Jabeen&fontSize=70&fontColor=ecf0f1&fontAlignY=40&fontAlign=50&desc=Full-Stack%20Developer%20%7C%20Scalable%20Applications%20%7C%20UI%20Design%20Enthusiast&descAlignY=60&descSize=20&descFontColor=bdc3c7&animation=fadeIn&stroke=3498db&strokeWidth=2" />
+<!-- HEADER -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:ffdee9,20:fec7ff,40:d6a4ff,60:c084fc,80:8b5cf6,100:7c3aed&height=280&section=header&text=Rukhsar%20Jabeen&fontSize=70&fontColor=ffffff&fontAlignY=40&fontAlign=50&desc=Full-Stack%20Developer%20%7C%20UI%2FUX%20Designer%20%7C%20Freelance%20Creative&descAlignY=60&descSize=18&descFontColor=fce7f3" />
 
 <br/>
 
-<p align="center">
-  <a href="#about"><img src="https://img.shields.io/badge/About-informational?style=flat&color=3498db" /></a>
-  <a href="#tech-stack"><img src="https://img.shields.io/badge/Tech%20Stack-3498db?style=flat" /></a>
-  <a href="#featured-projects"><img src="https://img.shields.io/badge/Featured%20Work-3498db?style=flat" /></a>
-  <a href="#connect"><img src="https://img.shields.io/badge/Let's%20Connect-3498db?style=flat" /></a>
+<p style="font-family: 'Poppins', sans-serif; font-size: 15px; color: #c084fc;">
+Crafting soft, aesthetic, and scalable digital experiences with a blend of design & engineering.
 </p>
 
 </div>
 
 ---
 
-## About Me
+## ✨ About Me
 
-I'm **Rukhsar Jabeen**, a **Full-Stack Developer** passionate about building scalable applications with aesthetic user interfaces. Based in **Pakistan**, I combine technical expertise with a creative design perspective to deliver exceptional digital experiences.
+I am **Rukhsar Jabeen**, a **freelance Full-Stack Developer & UI/UX Designer** specializing in aesthetic, modern, and user-centered digital products.
 
-My focus areas include:
-- **Full-Stack Development** – Building end-to-end applications using React, Node.js, and MySQL
-- **Scalable Architecture** – Designing systems that grow with your business needs
-- **Aesthetic UI Design** – Creating beautiful, user-centered interfaces that users love
-- **Performance Optimization** – Ensuring fast, responsive applications at scale
+I create **visually soft yet technically strong applications** that balance design beauty with real-world performance.
 
-**Philosophy:** Technology should be both powerful and beautiful. Great code deserves great design.
+> “I don’t just build apps—I design experiences that feel alive.”
 
 ---
 
-## Tech Stack
+## 💜 Core Expertise
 
-<div align="center">
-
-| Category | Technologies |
-|----------|---------------|
-| **Frontend** | React.js, Next.js, TypeScript, Tailwind CSS, Responsive Design |
-| **Backend** | Node.js, Express.js, Firebase, MongoDB, MySQL |
-| **Design & Graphics** | Figma, UI/UX Design, Adobe Creative Suite, Graphic Design |
-| **Tools & Platforms** | Git, GitHub, Docker, Postman, Vercel, Netlify |
-| **Specializations** | RESTful APIs, Database Design, Full-Stack Architecture, Web Design |
-
-</div>
+- Full-Stack Web Development (MERN / Modern JS Stack)
+- Aesthetic UI/UX Design Systems
+- Scalable Backend Architecture & REST APIs
+- Database Design & Optimization (MySQL / MongoDB)
+- Brand-Based Web Design for Personal & Business Identity
+- Performance-Focused Frontend Engineering
 
 ---
 
-## Featured Projects
+## 💻 Tech Stack
 
-I work on projects that blend **technical excellence** with **thoughtful design**:
+**Frontend**
+React.js • Next.js • TypeScript • Tailwind CSS • Framer Motion
 
-- **E-Commerce Platform** – Full-stack e-commerce solution with cart management, user authentication, and payment integration. *(React, Node.js, MongoDB, Stripe)*
+**Backend**
+Node.js • Express.js • Firebase • REST APIs
 
-- **Analytics Dashboard** – Interactive dashboard for data visualization with real-time updates and responsive design. *(Next.js, TypeScript, Chart.js, Tailwind)*
+**Database**
+MySQL • MongoDB
 
-- **Task Management App** – Collaborative task management with drag-and-drop, teams, and real-time sync. *(React, Firebase, Context API, Framer Motion)*
-
-Browse my repositories to see implementations of:
-- Full-stack MERN applications
-- Responsive, user-centered interfaces
-- RESTful API design and architecture
-- Database optimization and design patterns
-- Graphic design integration in web applications
-- Performance-optimized React applications
+**Design & Tools**
+Figma • Adobe XD • Git/GitHub • Postman • Vercel • Netlify
 
 ---
 
-## Let's Connect
+## 🌷 Services I Offer
 
-<div align="center">
+✔ Aesthetic Portfolio Websites  
+✔ Full-Stack Web Applications  
+✔ E-Commerce Platforms  
+✔ Admin Dashboards  
+✔ UI/UX Design & Prototyping  
+✔ API Development & Integration  
 
-<p style="font-size: 16px; margin-bottom: 20px;"><strong>I'm always open to discussing new projects, creative ideas, and opportunities to build something meaningful.</strong></p>
+Every project is crafted with:
+- Soft modern UI aesthetics  
+- Clean and scalable code  
+- Mobile-first responsiveness  
+- Smooth user experience  
 
-<a href="https://www.linkedin.com/in/rukhsar-jabeen" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn-%230A66C2.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-</a>
-<a href="https://www.instagram.com/rj_v.isuals" target="_blank">
-  <img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
-</a>
+---
+
+## 💫 Featured Work
+
+- Elegant E-Commerce Platforms  
+- Minimal & aesthetic portfolio websites  
+- Interactive dashboards with modern UI  
+- Full-stack web apps with clean architecture  
+
+---
+
+## 💌 Let’s Connect
+
+<p align="center">
+
 <a href="mailto:rjvisuals26@gmail.com">
-  <img src="https://img.shields.io/badge/Email-%23EA4335.svg?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-</a>
-<a href="https://mypf786.netlify.app/" target="_blank">
-  <img src="https://img.shields.io/badge/Portfolio-Website-3498db?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
+  <img src="https://img.shields.io/badge/Email-Soft%20Contact-f472b6?style=for-the-badge&logo=gmail&logoColor=white" />
 </a>
 
-<br><br>
+<a href="https://www.linkedin.com/in/rukhsar-jabeen">
+  <img src="https://img.shields.io/badge/LinkedIn-Professional-c084fc?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
 
-<p><strong>Opportunities I'm Interested In:</strong></p>
-<p>Full-Stack Development • Scalable Architecture Design • UI/UX Design • Web Applications • Performance Optimization</p>
+<a href="https://www.instagram.com/rj_v.isuals">
+  <img src="https://img.shields.io/badge/Instagram-Aesthetic-f9a8d4?style=for-the-badge&logo=instagram&logoColor=white" />
+</a>
 
-<br>
+<a href="https://mypf786.netlify.app/">
+  <img src="https://img.shields.io/badge/Portfolio-View%20Work-8b5cf6?style=for-the-badge&logo=vercel&logoColor=white" />
+</a>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:16a085,20:1abc9c,40:2980b9,60:3498db,80:34495e,100:2c3e50&height=150&section=footer" />
+</p>
+
+---
+
+<div align="center">
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:ffdee9,20:fec7ff,40:d6a4ff,60:c084fc,80:8b5cf6,100:7c3aed&height=140&section=footer" />
 
 </div>
