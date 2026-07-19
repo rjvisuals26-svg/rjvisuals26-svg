@@ -76,6 +76,9 @@ Every project is crafted with:
 
 ---
 <p align="center">
+  <img src="./lanyard.svg" alt="Developer ID Lanyard" width="45%">
+</p>
+<p align="center">
   <img src="./banner.svg" alt="Developer Banner" width="100%">
 </p>
 ## 💌 Let’s Connect
