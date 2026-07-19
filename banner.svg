@@ -95,14 +95,14 @@
 
   <!-- ================= LEFT SIDE: CORE PROFILE ================= -->
   
-  <!-- Terminal Prompt Line (Heading sizes optimized against window boundaries) -->
+  <!-- Terminal Prompt Line -->
   <g transform="translate(60, 110)">
     <text class="font-mono" font-size="20" font-weight="500" fill="#00f3ff" opacity="0.8">rjvisuals26-svg@developer:~$</text>
     <text class="font-sans" font-size="38" font-weight="800" fill="#ffffff" y="68" x="2" text-rendering="geometricPrecision">Full-Stack Web &amp; Mobile Dev</text>
     <text class="font-mono" font-size="18" font-weight="400" fill="#9d9aa8" y="118" x="4" text-rendering="geometricPrecision">Building High-Performance Web &amp; App Architectures</text>
   </g>
 
-  <!-- Dynamic Interactive Tech Pills Stack (Web & App Development Focus) -->
+  <!-- Dynamic Interactive Tech Pills Stack -->
   <g transform="translate(82, 300)">
     <!-- Row 1 -->
     <g transform="translate(0, 0)">
@@ -147,7 +147,7 @@
     </g>
   </g>
 
-  <!-- Re-engineered Core Architecture Metrics Grid (Expanded X spacing to prevent overlapping targets) -->
+  <!-- Re-engineered Core Architecture Metrics Grid -->
   <g transform="translate(82, 510)">
     <line x1="0" y1="0" x2="520" y2="0" stroke="url(#glass-edge)" stroke-width="1.5"/>
     
@@ -187,7 +187,7 @@
     <!-- IDE Title Tab file text -->
     <text class="font-mono" font-size="14" font-weight="500" fill="#7d7993" x="280" y="30" text-anchor="middle">rjvisuals26 — AppEngine.js</text>
 
-    <!-- Application Architecture JSON Config / Code Block (Safe absolute coordinate formatting) -->
+    <!-- Application Architecture JSON Config / Code Block -->
     <g transform="translate(45, 110)" class="font-mono" font-size="17" font-weight="500" letter-spacing="0.5">
       
       <!-- Code Line 1 -->
@@ -227,7 +227,7 @@
         <text fill="#ffffff" y="160" x="0">};</text>
       </g>
 
-    <!-- Real-time Console Logging Action Line -->
+      <!-- Real-time Console Logging Action Line with Fluent Text Flow Scaling -->
       <g transform="translate(0, 230)">
         <text fill="#7d7993" font-style="italic" y="0">// Initializing live client application instance...</text>
         
@@ -243,6 +243,7 @@
         <!-- Live Terminal Blinking Interactive Cursor -->
         <rect class="cursor" x="465" y="27" width="10" height="20"/>
       </g>
+    </g>
 
     <!-- Bottom Status Tray Bar -->
     <path d="M 0,470 Q 280,480 560,470 L 560,510 L 0,510 Z" fill="#110c22" fill-opacity="0.9"/>
