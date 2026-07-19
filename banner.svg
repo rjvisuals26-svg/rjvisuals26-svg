@@ -57,15 +57,15 @@
       }
       .ambient-orb { animation: float-slow 8s ease-in-out infinite; }
 
-      /* Code Highlight Fade In Sequence */
+      /* Pure Opacity Fade Sequence */
       @keyframes code-fade {
-        0% { opacity: 0; transform: translateY(5px); }
-        100% { opacity: 1; transform: translateY(0); }
+        0% { opacity: 0; }
+        100% { opacity: 1; }
       }
-      .code-line-1 { animation: code-fade 0.8s ease-out forwards; animation-delay: 0.5s; opacity: 0; }
-      .code-line-2 { animation: code-fade 0.8s ease-out forwards; animation-delay: 1.2s; opacity: 0; }
-      .code-line-3 { animation: code-fade 0.8s ease-out forwards; animation-delay: 1.9s; opacity: 0; }
-      .code-line-4 { animation: code-fade 0.8s ease-out forwards; animation-delay: 2.6s; opacity: 0; }
+      .code-line-1 { animation: code-fade 0.6s ease-out forwards; animation-delay: 0.3s; opacity: 0; }
+      .code-line-2 { animation: code-fade 0.6s ease-out forwards; animation-delay: 0.9s; opacity: 0; }
+      .code-line-3 { animation: code-fade 0.6s ease-out forwards; animation-delay: 1.5s; opacity: 0; }
+      .code-line-4 { animation: code-fade 0.6s ease-out forwards; animation-delay: 2.1s; opacity: 0; }
 
       /* Pulsing Neon Sign */
       @keyframes pulse-neon {
@@ -76,7 +76,7 @@
     </style>
   </defs>
 
-  <!-- Background Base Layer -->
+  <!-- Background Base Layers -->
   <rect width="1280" height="740" fill="#080511"/>
   <rect width="1280" height="740" fill="url(#bg-glow)"/>
   <rect width="1280" height="740" fill="url(#accent-pink)"/>
@@ -95,18 +95,14 @@
 
   <!-- ================= LEFT SIDE: CORE PROFILE ================= -->
   
-  <!-- Terminal Prompt Line -->
-  <g transform="translate(80, 110)">
+  <!-- Terminal Prompt Line (Heading sizes optimized against window boundaries) -->
+  <g transform="translate(60, 110)">
     <text class="font-mono" font-size="20" font-weight="500" fill="#00f3ff" opacity="0.8">rjvisuals26-svg@developer:~$</text>
-    <!-- SMIL Typewriter Simulation for main title -->
-    <text class="font-sans" font-size="52" font-weight="800" fill="#ffffff" y="70" x="2">
-      <animate attributeName="opacity" from="0" to="1" dur="0.2s" begin="0.2s" fill="freeze"/>
-      Creative Full-Stack Dev
-    </text>
-    <text class="font-mono" font-size="22" font-weight="400" fill="#9d9aa8" y="120" x="4">UI/UX Designer &amp; Software Engineer</text>
+    <text class="font-sans" font-size="38" font-weight="800" fill="#ffffff" y="68" x="2" text-rendering="geometricPrecision">Full-Stack Web &amp; Mobile Dev</text>
+    <text class="font-mono" font-size="18" font-weight="400" fill="#9d9aa8" y="118" x="4" text-rendering="geometricPrecision">Building High-Performance Web &amp; App Architectures</text>
   </g>
 
-  <!-- Dynamic Interactive Tech Pills Stack -->
+  <!-- Dynamic Interactive Tech Pills Stack (Web & App Development Focus) -->
   <g transform="translate(82, 300)">
     <!-- Row 1 -->
     <g transform="translate(0, 0)">
@@ -114,152 +110,152 @@
       <text class="font-sans" font-size="14" font-weight="600" fill="#00f3ff" x="65" y="24" text-anchor="middle">React.js</text>
     </g>
     <g transform="translate(145, 0)">
-      <rect width="150" height="38" rx="19" fill="#16122c" stroke="url(#glass-edge)" stroke-width="1.5"/>
-      <text class="font-sans" font-size="14" font-weight="600" fill="#ff2a74" x="75" y="24" text-anchor="middle">JavaScript</text>
+      <rect width="155" height="38" rx="19" fill="#16122c" stroke="url(#glass-edge)" stroke-width="1.5"/>
+      <text class="font-sans" font-size="14" font-weight="600" fill="#00f3ff" x="77.5" y="24" text-anchor="middle">React Native</text>
     </g>
-    <g transform="translate(310, 0)">
-      <rect width="110" height="38" rx="19" fill="#16122c" stroke="url(#glass-edge)" stroke-width="1.5"/>
-      <text class="font-sans" font-size="14" font-weight="600" fill="#b026ff" x="55" y="24" text-anchor="middle">Figma</text>
+    <g transform="translate(315, 0)">
+      <rect width="130" height="38" rx="19" fill="#16122c" stroke="url(#glass-edge)" stroke-width="1.5"/>
+      <text class="font-sans" font-size="14" font-weight="600" fill="#ff2a74" x="65" y="24" text-anchor="middle">JavaScript</text>
     </g>
 
     <!-- Row 2 -->
     <g transform="translate(0, 55)">
-      <rect width="120" height="38" rx="19" fill="#16122c" stroke="url(#glass-edge)" stroke-width="1.5"/>
-      <text class="font-sans" font-size="14" font-weight="600" fill="#ffffff" opacity="0.9" x="60" y="24" text-anchor="middle">Firebase</text>
+      <rect width="110" height="38" rx="19" fill="#16122c" stroke="url(#glass-edge)" stroke-width="1.5"/>
+      <text class="font-sans" font-size="14" font-weight="600" fill="#ffffff" opacity="0.9" x="55" y="24" text-anchor="middle">Firebase</text>
     </g>
-    <g transform="translate(135, 55)">
-      <rect width="155" height="38" rx="19" fill="#16122c" stroke="url(#glass-edge)" stroke-width="1.5"/>
-      <text class="font-sans" font-size="14" font-weight="600" fill="#00f3ff" x="77.5" y="24" text-anchor="middle">React Native</text>
+    <g transform="translate(125, 55)">
+      <rect width="110" height="38" rx="19" fill="#16122c" stroke="url(#glass-edge)" stroke-width="1.5"/>
+      <text class="font-sans" font-size="14" font-weight="600" fill="#ff9f43" x="55" y="24" text-anchor="middle">REST APIs</text>
     </g>
-    <g transform="translate(305, 55)">
-      <rect width="115" height="38" rx="19" fill="#16122c" stroke="url(#glass-edge)" stroke-width="1.5"/>
-      <text class="font-sans" font-size="14" font-weight="600" fill="#ff9f43" x="57.5" y="24" text-anchor="middle">REST APIs</text>
+    <g transform="translate(250, 55)">
+      <rect width="175" height="38" rx="19" fill="#16122c" stroke="url(#glass-edge)" stroke-width="1.5"/>
+      <text class="font-sans" font-size="14" font-weight="600" fill="#00e676" x="87.5" y="24" text-anchor="middle">Responsive Design</text>
     </g>
 
     <!-- Row 3 -->
     <g transform="translate(0, 110)">
-      <rect width="180" height="38" rx="19" fill="#16122c" stroke="url(#glass-edge)" stroke-width="1.5"/>
-      <text class="font-sans" font-size="14" font-weight="600" fill="#00e676" x="90" y="24" text-anchor="middle">Data Structures</text>
+      <rect width="120" height="38" rx="19" fill="#16122c" stroke="url(#glass-edge)" stroke-width="1.5"/>
+      <text class="font-sans" font-size="14" font-weight="600" fill="#b026ff" x="60" y="24" text-anchor="middle">UI/UX Figma</text>
     </g>
-    <g transform="translate(195, 110)">
-      <rect width="160" height="38" rx="19" fill="#16122c" stroke="url(#glass-edge)" stroke-width="1.5"/>
-      <text class="font-sans" font-size="14" font-weight="600" fill="#ff2a74" x="80" y="24" text-anchor="middle">Graphic Design</text>
+    <g transform="translate(135, 110)">
+      <rect width="100" height="38" rx="19" fill="#16122c" stroke="url(#glass-edge)" stroke-width="1.5"/>
+      <text class="font-sans" font-size="14" font-weight="600" fill="#00f3ff" x="50" y="24" text-anchor="middle">HTML/CSS</text>
+    </g>
+    <g transform="translate(250, 110)">
+      <rect width="130" height="38" rx="19" fill="#16122c" stroke="url(#glass-edge)" stroke-width="1.5"/>
+      <text class="font-sans" font-size="14" font-weight="600" fill="#ffffff" opacity="0.7" x="65" y="24" text-anchor="middle">Git &amp; GitHub</text>
     </g>
   </g>
 
-  <!-- Animated Interactive Counter Matrix / Stats Grid -->
+  <!-- Re-engineered Core Architecture Metrics Grid (Expanded X spacing to prevent overlapping targets) -->
   <g transform="translate(82, 510)">
-    <!-- Layout Grid Dividers -->
-    <line x1="0" y1="0" x2="420" y2="0" stroke="url(#glass-edge)" stroke-width="1.5"/>
+    <line x1="0" y1="0" x2="520" y2="0" stroke="url(#glass-edge)" stroke-width="1.5"/>
     
-    <!-- Metric 1: System Operational Framework -->
+    <!-- Focus 1: Engineering Foundations -->
     <g transform="translate(10, 25)">
-      <text class="font-sans" font-size="13" font-weight="600" fill="#6d6a78" letter-spacing="1">ARCHITECTURES</text>
-      <text class="font-mono" font-size="28" font-weight="600" fill="#ffffff" y="38">OOP / SQL</text>
+      <text class="font-sans" font-size="13" font-weight="600" fill="#6d6a78" letter-spacing="1">CORE ENGINES</text>
+      <text class="font-mono" font-size="26" font-weight="600" fill="#ffffff" y="38">OOP / DSA / SQL</text>
     </g>
 
-    <!-- Metric 2: Intelligent Networks -->
-    <g transform="translate(240, 25)">
-      <text class="font-sans" font-size="13" font-weight="600" fill="#6d6a78" letter-spacing="1">AI SUB-SYSTEMS</text>
-      <text class="font-mono" font-size="28" font-weight="600" fill="#00f3ff" y="38" filter="url(#subtle-glow)">CNN / TF</text>
+    <!-- Focus 2: Deployment Framework Targets -->
+    <g transform="translate(370, 25)">
+      <text class="font-sans" font-size="13" font-weight="600" fill="#6d6a78" letter-spacing="1">DEPLOYMENT TARGETS</text>
+      <text class="font-mono" font-size="26" font-weight="600" fill="#00f3ff" y="38" filter="url(#subtle-glow)">Web + Mobile</text>
     </g>
   </g>
 
 
-  <!-- ================= RIGHT SIDE: PREMIUM IDE CYBER CODEBOX ================= -->
+  <!-- ================= RIGHT SIDE: IDE CYBER CODEBOX ================= -->
   
   <g transform="translate(640, 95)">
-    <!-- Glassmorphic Container Backplate Shadow -->
+    <!-- Glassmorphic Plate Shadow -->
     <rect width="560" height="510" rx="24" fill="#020106" opacity="0.5" transform="translate(10, 12)"/>
     
-    <!-- True Glassmorphic Plate -->
+    <!-- Glassmorphic Container -->
     <rect width="560" height="510" rx="24" fill="#0d091a" fill-opacity="0.75" stroke="url(#glass-edge)" stroke-width="2" filter="url(#subtle-glow)"/>
     
-    <!-- Window Command Header bar -->
+    <!-- Header Window Tabs bar -->
     <rect width="560" height="50" rx="24" fill="#130e26" fill-opacity="0.9"/>
-    <!-- Window masking to fix bottom curve overlapping -->
     <rect width="560" height="26" y="24" fill="#130e26" fill-opacity="0.9"/>
     <line x1="0" y1="50" x2="560" y2="50" stroke="url(#glass-edge)" stroke-width="1.5"/>
     
-    <!-- Window Control OS Dots -->
+    <!-- Window System Dots -->
     <circle cx="30" cy="25" r="7" fill="#ff5f56"/>
     <circle cx="52" cy="25" r="7" fill="#ffbd2e"/>
     <circle cx="74" cy="25" r="7" fill="#27c93f"/>
     
-    <!-- IDE Title Tab text -->
-    <text class="font-mono" font-size="14" font-weight="500" fill="#7d7993" x="280" y="30" text-anchor="middle">rjvisuals26 — system.js</text>
+    <!-- IDE Title Tab file text -->
+    <text class="font-mono" font-size="14" font-weight="500" fill="#7d7993" x="280" y="30" text-anchor="middle">rjvisuals26 — AppEngine.js</text>
 
-    <!-- Live Compilation Script Core Code Content -->
+    <!-- Application Architecture JSON Config / Code Block (Safe absolute coordinate formatting) -->
     <g transform="translate(45, 110)" class="font-mono" font-size="17" font-weight="500" letter-spacing="0.5">
       
       <!-- Code Line 1 -->
       <g class="code-line-1">
-        <text fill="#ff2a74">const</text>
-        <text fill="#ffffff" x="60">developer</text>
-        <text fill="#00f3ff" x="155">=</text>
-        <text fill="#ffffff" x="175">{</text>
+        <text fill="#ff2a74" y="0">const</text>
+        <text fill="#ffffff" y="0" x="60">appStack</text>
+        <text fill="#00f3ff" y="0" x="145">=</text>
+        <text fill="#ffffff" y="0" x="165">{</text>
       </g>
 
       <!-- Code Line 2 -->
-      <g class="code-line-2" transform="translate(25, 40)">
-        <text fill="#ffffff">name:</text>
-        <text fill="#ff9f43" x="65">'RJ_Visuals'</text>
-        <text fill="#ffffff" x="185">,</text>
+      <g class="code-line-2">
+        <text fill="#ffffff" y="40" x="25">frontend:</text>
+        <text fill="#ff9f43" y="40" x="115">'React Native &amp; Web'</text>
+        <text fill="#ffffff" y="40" x="295">,</text>
       </g>
 
       <!-- Code Line 3 -->
-      <g class="code-line-3" transform="translate(25, 80)">
-        <text fill="#ffffff">mission:</text>
-        <text fill="#00e676" x="95">'Bridging UI Elegance &amp; Fast Code'</text>
-        <text fill="#ffffff" x="435">,</text>
+      <g class="code-line-3">
+        <text fill="#ffffff" y="80" x="25">database:</text>
+        <text fill="#00e676" y="80" x="115">'Firebase Firestore &amp; SQL'</text>
+        <text fill="#ffffff" y="80" x="355">,</text>
       </g>
 
       <!-- Code Line 4 -->
-      <g class="code-line-4" transform="translate(25, 120)">
-        <text fill="#b026ff">builtWith:</text>
-        <text fill="#ffffff" x="105">[</text>
-        <text fill="#00f3ff" x="115">'React'</text>
-        <text fill="#ffffff" x="185">,</text>
-        <text fill="#00f3ff" x="195">'Figma'</text>
-        <text fill="#ffffff" x="265">,</text>
-        <text fill="#00f3ff" x="275">'Node'</text>
-        <text fill="#ffffff" x="335">]</text>
+      <g class="code-line-4">
+        <text fill="#b026ff" y="120" x="25">features:</text>
+        <text fill="#ffffff" y="120" x="115">[</text>
+        <text fill="#00f3ff" y="120" x="125">'REST_APIs'</text>
+        <text fill="#ffffff" y="120" x="225">,</text>
+        <text fill="#00f3ff" y="120" x="235">'Responsive_UI'</text>
+        <text fill="#ffffff" y="120" x="365">]</text>
       </g>
 
-      <!-- Code Line 5 (Trailing Closing brackets) -->
-      <g class="code-line-4" transform="translate(0, 160)">
-        <text fill="#ffffff">};</text>
+      <!-- Code Line 5 -->
+      <g class="code-line-4">
+        <text fill="#ffffff" y="160" x="0">};</text>
       </g>
 
-      <!-- Real-time Console Logging Action Line -->
+      <!-- Live Terminal Log Action Frame -->
       <g transform="translate(0, 230)">
-        <text fill="#7d7993" font-style="italic">// Executing core initialization...</text>
+        <text fill="#7d7993" font-style="italic" y="0">// Initializing live client application instance...</text>
         
         <text fill="#b026ff" y="45">console</text>
         <text fill="#ffffff" x="70" y="45">.</text>
         <text fill="#00f3ff" x="80" y="45">log</text>
         <text fill="#ffffff" x="110" y="45">(</text>
-        <text fill="#ff9f43" x="120" y="45">`Status: Fully Operational`</text>
-        <text fill="#ffffff" x="390" y="45">);</text>
+        <text fill="#ff9f43" x="120" y="45">`System Status: Production Ready`</text>
+        <text fill="#ffffff" x="420" y="45">);</text>
         
         <!-- Live Terminal Blinking Interactive Cursor -->
-        <rect class="cursor" x="412" y="27" width="10" height="20"/>
+        <rect class="cursor" x="442" y="27" width="10" height="20"/>
       </g>
     </g>
 
-    <!-- Bottom Embedded Status Tray Bar Overlay -->
+    <!-- Bottom Status Tray Bar -->
     <path d="M 0,470 Q 280,480 560,470 L 560,510 L 0,510 Z" fill="#110c22" fill-opacity="0.9"/>
     <line x1="0" y1="470" x2="560" y2="470" stroke="url(#glass-edge)" stroke-width="1.2"/>
-    <text class="font-sans class-status" font-size="12" font-weight="700" fill="#00e676" x="35" y="494" letter-spacing="1">● LIVE BUILD SUCCESSFUL</text>
+    <text class="font-sans class-status" font-size="12" font-weight="700" fill="#00e676" x="35" y="494" letter-spacing="1">● CORE APPLICATION ACTIVE</text>
     <text class="font-mono" font-size="12" font-weight="500" fill="#534f66" x="525" y="494" text-anchor="end">UTF-8</text>
   </g>
 
-  <!-- ================= RUNTIME CORNER DECORATION ACENTS ================= -->
+  <!-- ================= FRAME EDGE ACCENTS ================= -->
   
-  <!-- Sleek Glowing Neon Frame Borders -->
+  <!-- Glowing Frame Border Line -->
   <rect x="25" y="25" width="1230" height="690" rx="20" fill="none" stroke="url(#neon-gradient)" stroke-width="2" opacity="0.4"/>
   
-  <!-- Top Right Stylized Status Indicator Crosshair/Star sign -->
+  <!-- Top Right Crosshair Asset -->
   <g class="neon-sign" transform="translate(1210, 55)" opacity="0.8">
     <path d="M-15,0 L15,0 M0,-15 L0,15" stroke="#ff2a74" stroke-width="3"/>
     <circle cx="0" cy="0" r="5" fill="#ffffff"/>
