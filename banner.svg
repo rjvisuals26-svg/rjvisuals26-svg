@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="100%" height="100%">
+=<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 950" width="100%" height="100%">
   <defs>
     <!-- Background Gradient Theme -->
-    <radialGradient id="bg-glow" cx="60%" cy="50%" r="70%">
+    <radialGradient id="bg-glow" cx="50%" cy="50%" r="70%">
       <stop offset="0%" stop-color="#181135" stop-opacity="0.8"/>
       <stop offset="100%" stop-color="#05030d"/>
     </radialGradient>
@@ -48,31 +48,41 @@
       }
       .cute-heart { 
         animation: pulse-heart 3s ease-in-out infinite; 
-        transform-origin: 945px 125px; 
+        transform-origin: 370px 125px; 
       }
     </style>
   </defs>
 
   <!-- Canvas Background -->
-  <rect width="1440" height="900" fill="#05030d"/>
-  <rect width="1440" height="900" fill="url(#bg-glow)"/>
+  <rect width="1440" height="950" fill="#05030d"/>
+  <rect width="1440" height="950" fill="url(#bg-glow)"/>
 
   <!-- Subtle Ambient Grid Texture -->
   <g opacity="0.015" stroke="#ffffff" stroke-width="1">
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
       <path d="M 1440 0 L 0 0 0 40" fill="none"/>
     </pattern>
-    <rect width="1440" height="900" fill="url(#grid)"/>
+    <rect width="1440" height="950" fill="url(#grid)"/>
   </g>
 
-  <!-- ================= COLUMN 1: CHARACTER PLACEMENT (LEFT) ================= -->
+  <!-- ================= COLUMN 1: CHARACTER & BIOGRAPHY (LEFT) ================= -->
+  
+  <!-- Character Illustration -->
   <image href="https://i.ibb.co/zVk5Zdh3/Untitled-20-July-2026-at-00-41-28.png" 
-         x="25" y="160" width="560" height="560" preserveAspectRatio="xMidYMidMeet"/>
+         x="25" y="140" width="560" height="560" preserveAspectRatio="xMidYMidMeet"/>
 
-  <!-- Motivational Quote under the Girl Image -->
-  <g transform="translate(60, 715)" filter="url(#subtle-glow)">
-    <text class="font-quote" font-size="24" font-weight="700" fill="#ffffff" opacity="0.95">✨ Build, Learn, and Repeat</text>
-    <line x1="0" y1="12" x2="280" y2="12" stroke="url(#neon-gradient)" stroke-width="2.5" opacity="0.4" />
+  <!-- Biography Paragraph (Moved from center column to sit under the img) -->
+  <g transform="translate(60, 680)">
+    <rect width="450" height="210" rx="16" fill="#080615" fill-opacity="0.7" stroke="url(#glass-edge)" stroke-width="1"/>
+    <text class="font-sans" font-size="13" font-weight="700" fill="#ff2a74" x="20" y="30" letter-spacing="1">WHO I AM</text>
+    <g transform="translate(20, 58)" class="font-sans" font-size="12" font-weight="600" fill="#ffffff" opacity="0.85">
+      <text y="0" font-weight="700">I'm Rukhsar Asad,</text>
+      <text y="20">a Computer Science student and developer passionate</text>
+      <text y="38">about creating beautiful, functional digital experiences.</text>
+      <text y="56">I combine modern development practices with a strong eye</text>
+      <text y="74">for design to build websites and applications that are simple,</text>
+      <text y="92">elegant, and user-focused.</text>
+    </g>
   </g>
 
   <!-- Top Left Keep Coding Branding Box -->
@@ -82,12 +92,12 @@
     <text class="font-mono" font-size="11" font-weight="600" fill="#b026ff" x="100" y="46" text-anchor="middle" letter-spacing="1.5">KEEP GROWING</text>
   </g>
 
-  <!-- ================= COLUMN 2: HEADER & MAIN PROFILE DETAILS (MIDDLE) ================= -->
+  <!-- ================= COLUMN 2: HEADER & TECH DETAILS (MIDDLE) ================= -->
   <g transform="translate(610, 80)">
     <text class="font-mono" font-size="16" fill="#ff2a74" opacity="0.9">rukhsar@dev:<tspan fill="#00f3ff">~</tspan><tspan fill="#ffffff">$ cat README.md</tspan></text>
     <rect x="252" y="-14" width="10" height="18" fill="#9d9aa8" opacity="0.5"/>
     
-    <text class="font-sans" font-size="20" font-weight="600" fill="#ffffff" y="45">Hi there! 👋 I'm</text>
+    <text class="font-sans" font-size="20" font-weight="600" fill="#ffffff" y="45">Hi there! I'm</text>
     
     <!-- Script Name Typography Layout -->
     <text class="font-cute" font-size="68" font-weight="700" fill="#ff2a74" y="115" filter="url(#pink-glow)">Rukhsar Jabeen</text>
@@ -99,13 +109,10 @@
     <line x1="0" y1="175" x2="415" y2="175" stroke="#1f1a3a" stroke-width="1.5"/>
   </g>
 
-  <!-- Strip Comment Quote Block -->
-  <g transform="translate(610, 275)">
-    <rect width="400" height="75" rx="12" fill="#0d091f" fill-opacity="0.6" stroke="url(#glass-edge)" stroke-width="1"/>
-    <text class="font-sans" font-size="44" font-weight="800" fill="#ff2a74" opacity="0.3" x="12" y="45">“</text>
-    <text class="font-sans" font-size="13" font-weight="600" fill="#9d9aa8" x="38" y="32" text-rendering="geometricPrecision">I build responsive, user-friendly and impactful</text>
-    <text class="font-sans" font-size="13" font-weight="600" fill="#9d9aa8" x="38" y="52" text-rendering="geometricPrecision">web experiences.</text>
-    <circle cx="380" cy="55" r="4" fill="#ff2a74"/>
+  <!-- New, Clean Quote (Replaced the comment block and quote) -->
+  <g transform="translate(610, 275)" filter="url(#subtle-glow)">
+    <text class="font-quote" font-size="28" font-weight="700" fill="#ffffff" opacity="0.95">From imagination to implementation.</text>
+    <line x1="0" y1="14" x2="280" y2="14" stroke="url(#neon-gradient)" stroke-width="2.5" opacity="0.4" />
   </g>
 
   <!-- 12-Pill Tech Stack Panel -->
@@ -133,19 +140,23 @@
       <rect width="85" height="32" rx="10" fill="#120e29" stroke="url(#glass-edge)" stroke-width="1"/>
       <text class="font-sans" font-size="12" font-weight="600" fill="#ff2a74" x="42.5" y="20" text-anchor="middle">Firebase</text>
     </g>
+    <g transform="translate(470, 22)">
+      <rect width="60" height="32" rx="10" fill="#120e29" stroke="url(#glass-edge)" stroke-width="1"/>
+      <text class="font-sans" font-size="12" font-weight="600" fill="#ffffff" opacity="0.8" x="30" y="20" text-anchor="middle">C++</text>
+    </g>
 
     <!-- Row 2 -->
     <g transform="translate(0, 66)">
       <rect width="60" height="32" rx="10" fill="#120e29" stroke="url(#glass-edge)" stroke-width="1"/>
-      <text class="font-sans" font-size="12" font-weight="600" fill="#ffffff" opacity="0.8" x="30" y="20" text-anchor="middle">C++</text>
-    </g>
-    <g transform="translate(70, 66)">
-      <rect width="60" height="32" rx="10" fill="#120e29" stroke="url(#glass-edge)" stroke-width="1"/>
       <text class="font-sans" font-size="12" font-weight="600" fill="#00e676" x="30" y="20" text-anchor="middle">SQL</text>
     </g>
-    <g transform="translate(140, 66)">
+    <g transform="translate(70, 66)">
       <rect width="70" height="32" rx="10" fill="#120e29" stroke="url(#glass-edge)" stroke-width="1"/>
       <text class="font-sans" font-size="12" font-weight="600" fill="#b026ff" x="35" y="20" text-anchor="middle">Figma</text>
+    </g>
+    <g transform="translate(140, 66)">
+      <rect width="80" height="32" rx="10" fill="#120e29" stroke="url(#glass-edge)" stroke-width="1"/>
+      <text class="font-sans" font-size="12" font-weight="600" fill="#00f3ff" x="40" y="20" text-anchor="middle">Netlify</text>
     </g>
     <g transform="translate(220, 66)">
       <rect width="80" height="32" rx="10" fill="#120e29" stroke="url(#glass-edge)" stroke-width="1"/>
@@ -165,22 +176,7 @@
     </g>
   </g>
 
-  <!-- About Me Portal Box (Replaced by the new paragraph intro) -->
-  <g transform="translate(610, 580)">
-    <rect width="450" height="195" rx="16" fill="#080615" fill-opacity="0.7" stroke="url(#glass-edge)" stroke-width="1"/>
-    <text class="font-sans" font-size="13" font-weight="700" fill="#ff2a74" x="20" y="30" letter-spacing="1">✨ WHO I AM</text>
-    <g transform="translate(20, 58)" class="font-sans" font-size="12" font-weight="600" fill="#ffffff" opacity="0.85">
-      <!-- Replaced Info Paragraph using explicit line breaks to prevent collision -->
-      <text y="0" font-weight="700">I'm Rukhsar Asad,</text>
-      <text y="20">a Computer Science student and developer passionate</text>
-      <text y="38">about creating beautiful, functional digital experiences.</text>
-      <text y="56">I combine modern development practices with a strong eye</text>
-      <text y="74">for design to build websites and applications that are simple,</text>
-      <text y="92">elegant, and user-focused.</text>
-    </g>
-  </g>
-
-  <!-- ================= COLUMN 3: CODE WINDOW & STATS (RIGHT SIDE) ================= -->
+  <!-- ================= COLUMN 3: CODE & CONNECT (RIGHT SIDE) ================= -->
   
   <!-- Interactive about.jsx Code Window -->
   <g transform="translate(1040, 60)">
@@ -207,10 +203,10 @@
     </g>
   </g>
 
-  <!-- Connect with Me Terminal Box (Repositioned to the spot where stats were) -->
+  <!-- Connect with Me Terminal Box (Repositioned for balanced flow) -->
   <g transform="translate(1040, 425)">
-    <rect width="360" height="350" rx="14" fill="#090617" fill-opacity="0.9" stroke="url(#glass-edge)" stroke-width="1"/>
-    <text class="font-sans" font-size="13" font-weight="700" fill="#00f3ff" x="20" y="30" letter-spacing="1">💌 CONNECT WITH ME</text>
+    <rect width="360" height="300" rx="14" fill="#090617" fill-opacity="0.9" stroke="url(#glass-edge)" stroke-width="1"/>
+    <text class="font-sans" font-size="13" font-weight="700" fill="#00f3ff" x="20" y="30" letter-spacing="1">CONNECT WITH ME</text>
     <g transform="translate(20, 68)" class="font-mono" font-size="12">
       <text fill="#ffffff">> @rukhsar-jabeen</text>
       <text y="26" fill="#b026ff">> /rukhsar-jabeen</text>
@@ -220,5 +216,5 @@
   </g>
 
   <!-- Outer Neon Synth Frame Borders Wrapper -->
-  <rect x="25" y="25" width="1390" height="850" rx="24" fill="none" stroke="url(#neon-gradient)" stroke-width="2" opacity="0.25"/>
+  <rect x="25" y="25" width="1390" height="900" rx="24" fill="none" stroke="url(#neon-gradient)" stroke-width="2" opacity="0.25"/>
 </svg>
