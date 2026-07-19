@@ -227,21 +227,22 @@
         <text fill="#ffffff" y="160" x="0">};</text>
       </g>
 
-      <!-- Live Terminal Log Action Frame -->
+    <!-- Real-time Console Logging Action Line -->
       <g transform="translate(0, 230)">
         <text fill="#7d7993" font-style="italic" y="0">// Initializing live client application instance...</text>
         
-        <text fill="#b026ff" y="45">console</text>
-        <text fill="#ffffff" x="70" y="45">.</text>
-        <text fill="#00f3ff" x="80" y="45">log</text>
-        <text fill="#ffffff" x="110" y="45">(</text>
-        <text fill="#ff9f43" x="120" y="45">`System Status: Production Ready`</text>
-        <text fill="#ffffff" x="420" y="45">);</text>
+        <text y="45" x="0">
+          <tspan fill="#b026ff">console</tspan>
+          <tspan fill="#ffffff">.</tspan>
+          <tspan fill="#00f3ff">log</tspan>
+          <tspan fill="#ffffff">(</tspan>
+          <tspan fill="#ff9f43">`System Status: Production Ready`</tspan>
+          <tspan fill="#ffffff">);</tspan>
+        </text>
         
         <!-- Live Terminal Blinking Interactive Cursor -->
-        <rect class="cursor" x="442" y="27" width="10" height="20"/>
+        <rect class="cursor" x="465" y="27" width="10" height="20"/>
       </g>
-    </g>
 
     <!-- Bottom Status Tray Bar -->
     <path d="M 0,470 Q 280,480 560,470 L 560,510 L 0,510 Z" fill="#110c22" fill-opacity="0.9"/>
