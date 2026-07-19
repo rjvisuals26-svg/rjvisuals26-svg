@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 400" width="100%" height="100%">
+  <defs>
+    <!-- Premium Cyberpunk Gradients -->
+    <linearGradient id="card-body" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#130e26" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#070412" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="glass-edge" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02"/>
+    </linearGradient>
+    <linearGradient id="neon-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f3ff"/>
+      <stop offset="100%" stop-color="#b026ff"/>
+    </linearGradient>
+    <linearGradient id="neon-pink" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff2a74"/>
+      <stop offset="100%" stop-color="#ff65a3"/>
+    </linearGradient>
+
+    <!-- Filters for Glow Effects -->
+    <filter id="subtle-glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Typography Styles -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500;600&amp;family=Inter:wght@400;700;800&amp;display=swap');
+      .txt-sans { font-family: 'Inter', system-ui, sans-serif; }
+      .txt-mono { font-family: 'Fira Code', monospace; }
+
+      /* Pure Opacity Animations for Stat Rows (Safest method for GitHub) */
+      @keyframes row-fade {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+      .stat-row-1 { animation: row-fade 0.6s ease-out forwards; animation-delay: 0.2s; opacity: 0; }
+      .stat-row-2 { animation: row-fade 0.6s ease-out forwards; animation-delay: 0.4s; opacity: 0; }
+      .stat-row-3 { animation: row-fade 0.6s ease-out forwards; animation-delay: 0.6s; opacity: 0; }
+      
+      /* Circular Ring Loader Animation */
+      @keyframes fill-ring {
+        0% { stroke-dashoffset: 283; }
+        100% { stroke-dashoffset: 65; }
+      }
+      .rank-ring { 
+        stroke-dasharray: 283; 
+        stroke-dashoffset: 283; 
+        animation: fill-ring 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards; 
+        animation-delay: 0.5s; 
+      }
+    </style>
+  </defs>
+
+  <!-- Base Plate Frame Layer -->
+  <rect width="560" height="400" rx="24" fill="url(#card-body)" stroke="url(#glass-edge)" stroke-width="2" filter="url(#subtle-glow)"/>
+  
+  <!-- Subtle Internal Geometric Grid lines -->
+  <g opacity="0.02" stroke="#ffffff" stroke-width="1">
+    <line x1="40" y1="0" x2="40" y2="400"/>
+    <line x1="0" y1="60" x2="560" y2="60"/>
+  </g>
+
+  <!-- ================= CARD HEADER ================= -->
+  <g transform="translate(35, 40)">
+    <circle cx="0" cy="-6" r="5" fill="#ff2a74" filter="url(#subtle-glow)"/>
+    <text class="txt-sans" font-size="14" font-weight="700" fill="#9d9aa8" x="15" y="0" letter-spacing="1.5">PRODUCTION METRICS</text>
+  </g>
+
+  <!-- ================= LEFT SIDE: FIXED ABSOLUTE METRIC ROWS ================= -->
+  
+  <!-- Row 1: Total Commits -->
+  <g class="stat-row-1">
+    <text class="txt-sans" font-size="13" font-weight="600" fill="#6d6a78" letter-spacing="0.5" x="35" y="110">TOTAL COMMITS</text>
+    <text class="txt-mono" font-size="24" font-weight="600" fill="#ffffff" x="35" y="142">1,482+</text>
+    <line x1="35" y1="158" x2="315" y2="158" stroke="#1f1a3a" stroke-width="1"/>
+  </g>
+
+  <!-- Row 2: Projects Deployed -->
+  <g class="stat-row-2">
+    <text class="txt-sans" font-size="13" font-weight="600" fill="#6d6a78" letter-spacing="0.5" x="35" y="185">LIVE DEPLOYMENTS</text>
+    <text class="txt-mono" font-size="24" font-weight="600" fill="#00f3ff" x="35" y="217" filter="url(#subtle-glow)">Web + Mobile</text>
+    <line x1="35" y1="233" x2="315" y2="233" stroke="#1f1a3a" stroke-width="1"/>
+  </g>
+
+  <!-- Row 3: Pull Requests / Contributions -->
+  <g class="stat-row-3">
+    <text class="txt-sans" font-size="13" font-weight="600" fill="#6d6a78" letter-spacing="0.5" x="35" y="260">CONTRIBUTIONS</text>
+    <text class="txt-mono" font-size="24" font-weight="600" fill="#ff2a74" x="35" y="292">99.8% Uptime</text>
+  </g>
+
+  <!-- Vertical Divider Line -->
+  <line x1="340" y1="90" x2="340" y2="330" stroke="url(#glass-edge)" stroke-width="1.5"/>
+
+  <!-- ================= RIGHT SIDE: DYNAMIC RANK RADAR ================= -->
+  <g transform="translate(440, 210)">
+    <!-- Background Circle track -->
+    <circle r="45" fill="none" stroke="#16122c" stroke-width="8"/>
+    
+    <!-- Animated Foreground Ring Progress Tracker -->
+    <circle class="rank-ring" r="45" fill="none" stroke="url(#neon-pink)" stroke-width="8" stroke-linecap="round" transform="rotate(-90)" filter="url(#subtle-glow)"/>
+    
+    <!-- Central Grade Label Core -->
+    <text class="txt-sans" font-size="32" font-weight="800" fill="#ffffff" x="0" y="11" text-anchor="middle">A+</text>
+    
+    <!-- Overall Rank Text Identifier underneath -->
+    <text class="txt-mono" font-size="11" font-weight="600" fill="#6d6a78" x="0" y="75" text-anchor="middle" letter-spacing="1.5">DEV_RANK</text>
+  </g>
+</svg>
