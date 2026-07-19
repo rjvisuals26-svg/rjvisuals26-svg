@@ -1,0 +1,267 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 740" width="100%" height="100%">
+  <defs>
+    <!-- Background & Ambient Glow Gradients -->
+    <radialGradient id="bg-glow" cx="80%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#2a1b4e" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#120c24" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#080511"/>
+    </radialGradient>
+    <radialGradient id="accent-pink" cx="20%" cy="80%" r="50%">
+      <stop offset="0%" stop-color="#ff2a74" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#080511" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="neon-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f3ff"/>
+      <stop offset="50%" stop-color="#b026ff"/>
+      <stop offset="100%" stop-color="#ff2a74"/>
+    </linearGradient>
+    <linearGradient id="glass-edge" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02"/>
+    </linearGradient>
+
+    <!-- Drop Shadows and Glow Filters -->
+    <filter id="neon-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="subtle-glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Global Styles & Typography -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&amp;family=Inter:wght@400;700;800&amp;display=swap');
+      
+      .font-sans { font-family: 'Inter', system-ui, sans-serif; }
+      .font-mono { font-family: 'Fira Code', monospace; }
+      
+      /* Terminal Cursor Blink */
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+      .cursor { animation: blink 1s infinite; fill: #00f3ff; }
+
+      /* Floating Ambient Orbs */
+      @keyframes float-slow {
+        0%, 100% { transform: translateY(0px) scale(1); }
+        50% { transform: translateY(-20px) scale(1.05); }
+      }
+      .ambient-orb { animation: float-slow 8s ease-in-out infinite; }
+
+      /* Code Highlight Fade In Sequence */
+      @keyframes code-fade {
+        0% { opacity: 0; transform: translateY(5px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      .code-line-1 { animation: code-fade 0.8s ease-out forwards; animation-delay: 0.5s; opacity: 0; }
+      .code-line-2 { animation: code-fade 0.8s ease-out forwards; animation-delay: 1.2s; opacity: 0; }
+      .code-line-3 { animation: code-fade 0.8s ease-out forwards; animation-delay: 1.9s; opacity: 0; }
+      .code-line-4 { animation: code-fade 0.8s ease-out forwards; animation-delay: 2.6s; opacity: 0; }
+
+      /* Pulsing Neon Sign */
+      @keyframes pulse-neon {
+        0%, 100% { opacity: 0.9; filter: drop-shadow(0 0 8px #ff2a74); }
+        50% { opacity: 1; filter: drop-shadow(0 0 18px #ff2a74); }
+      }
+      .neon-sign { animation: pulse-neon 4s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <!-- Background Base Layer -->
+  <rect width="1280" height="740" fill="#080511"/>
+  <rect width="1280" height="740" fill="url(#bg-glow)"/>
+  <rect width="1280" height="740" fill="url(#accent-pink)"/>
+
+  <!-- Geometric Grid Accent Layer -->
+  <g opacity="0.03" stroke="#ffffff" stroke-width="1">
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none"/>
+    </pattern>
+    <rect width="1280" height="740" fill="url(#grid)"/>
+  </g>
+
+  <!-- Ambient Light Orbs -->
+  <circle class="ambient-orb" cx="1100" cy="200" r="120" fill="#b026ff" opacity="0.15" filter="url(#neon-glow)"/>
+  <circle class="ambient-orb" cx="150" cy="550" r="160" fill="#ff2a74" opacity="0.1" filter="url(#neon-glow)"/>
+
+  <!-- ================= LEFT SIDE: CORE PROFILE ================= -->
+  
+  <!-- Terminal Prompt Line -->
+  <g transform="translate(80, 110)">
+    <text class="font-mono" font-size="20" font-weight="500" fill="#00f3ff" opacity="0.8">rjvisuals26-svg@developer:~$</text>
+    <!-- SMIL Typewriter Simulation for main title -->
+    <text class="font-sans" font-size="52" font-weight="800" fill="#ffffff" y="70" x="2">
+      <animate attributeName="opacity" from="0" to="1" dur="0.2s" begin="0.2s" fill="freeze"/>
+      Creative Full-Stack Dev
+    </text>
+    <text class="font-mono" font-size="22" font-weight="400" fill="#9d9aa8" y="120" x="4">UI/UX Designer &amp; Software Engineer</text>
+  </g>
+
+  <!-- Dynamic Interactive Tech Pills Stack -->
+  <g transform="translate(82, 300)">
+    <!-- Row 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="130" height="38" rx="19" fill="#16122c" stroke="url(#glass-edge)" stroke-width="1.5"/>
+      <text class="font-sans" font-size="14" font-weight="600" fill="#00f3ff" x="65" y="24" text-anchor="middle">React.js</text>
+    </g>
+    <g transform="translate(145, 0)">
+      <rect width="150" height="38" rx="19" fill="#16122c" stroke="url(#glass-edge)" stroke-width="1.5"/>
+      <text class="font-sans" font-size="14" font-weight="600" fill="#ff2a74" x="75" y="24" text-anchor="middle">JavaScript</text>
+    </g>
+    <g transform="translate(310, 0)">
+      <rect width="110" height="38" rx="19" fill="#16122c" stroke="url(#glass-edge)" stroke-width="1.5"/>
+      <text class="font-sans" font-size="14" font-weight="600" fill="#b026ff" x="55" y="24" text-anchor="middle">Figma</text>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(0, 55)">
+      <rect width="120" height="38" rx="19" fill="#16122c" stroke="url(#glass-edge)" stroke-width="1.5"/>
+      <text class="font-sans" font-size="14" font-weight="600" fill="#ffffff" opacity="0.9" x="60" y="24" text-anchor="middle">Firebase</text>
+    </g>
+    <g transform="translate(135, 55)">
+      <rect width="155" height="38" rx="19" fill="#16122c" stroke="url(#glass-edge)" stroke-width="1.5"/>
+      <text class="font-sans" font-size="14" font-weight="600" fill="#00f3ff" x="77.5" y="24" text-anchor="middle">React Native</text>
+    </g>
+    <g transform="translate(305, 55)">
+      <rect width="115" height="38" rx="19" fill="#16122c" stroke="url(#glass-edge)" stroke-width="1.5"/>
+      <text class="font-sans" font-size="14" font-weight="600" fill="#ff9f43" x="57.5" y="24" text-anchor="middle">REST APIs</text>
+    </g>
+
+    <!-- Row 3 -->
+    <g transform="translate(0, 110)">
+      <rect width="180" height="38" rx="19" fill="#16122c" stroke="url(#glass-edge)" stroke-width="1.5"/>
+      <text class="font-sans" font-size="14" font-weight="600" fill="#00e676" x="90" y="24" text-anchor="middle">Data Structures</text>
+    </g>
+    <g transform="translate(195, 110)">
+      <rect width="160" height="38" rx="19" fill="#16122c" stroke="url(#glass-edge)" stroke-width="1.5"/>
+      <text class="font-sans" font-size="14" font-weight="600" fill="#ff2a74" x="80" y="24" text-anchor="middle">Graphic Design</text>
+    </g>
+  </g>
+
+  <!-- Animated Interactive Counter Matrix / Stats Grid -->
+  <g transform="translate(82, 510)">
+    <!-- Layout Grid Dividers -->
+    <line x1="0" y1="0" x2="420" y2="0" stroke="url(#glass-edge)" stroke-width="1.5"/>
+    
+    <!-- Metric 1: System Operational Framework -->
+    <g transform="translate(10, 25)">
+      <text class="font-sans" font-size="13" font-weight="600" fill="#6d6a78" letter-spacing="1">ARCHITECTURES</text>
+      <text class="font-mono" font-size="28" font-weight="600" fill="#ffffff" y="38">OOP / SQL</text>
+    </g>
+
+    <!-- Metric 2: Intelligent Networks -->
+    <g transform="translate(240, 25)">
+      <text class="font-sans" font-size="13" font-weight="600" fill="#6d6a78" letter-spacing="1">AI SUB-SYSTEMS</text>
+      <text class="font-mono" font-size="28" font-weight="600" fill="#00f3ff" y="38" filter="url(#subtle-glow)">CNN / TF</text>
+    </g>
+  </g>
+
+
+  <!-- ================= RIGHT SIDE: PREMIUM IDE CYBER CODEBOX ================= -->
+  
+  <g transform="translate(640, 95)">
+    <!-- Glassmorphic Container Backplate Shadow -->
+    <rect width="560" height="510" rx="24" fill="#020106" opacity="0.5" transform="translate(10, 12)"/>
+    
+    <!-- True Glassmorphic Plate -->
+    <rect width="560" height="510" rx="24" fill="#0d091a" fill-opacity="0.75" stroke="url(#glass-edge)" stroke-width="2" filter="url(#subtle-glow)"/>
+    
+    <!-- Window Command Header bar -->
+    <rect width="560" height="50" rx="24" fill="#130e26" fill-opacity="0.9"/>
+    <!-- Window masking to fix bottom curve overlapping -->
+    <rect width="560" height="26" y="24" fill="#130e26" fill-opacity="0.9"/>
+    <line x1="0" y1="50" x2="560" y2="50" stroke="url(#glass-edge)" stroke-width="1.5"/>
+    
+    <!-- Window Control OS Dots -->
+    <circle cx="30" cy="25" r="7" fill="#ff5f56"/>
+    <circle cx="52" cy="25" r="7" fill="#ffbd2e"/>
+    <circle cx="74" cy="25" r="7" fill="#27c93f"/>
+    
+    <!-- IDE Title Tab text -->
+    <text class="font-mono" font-size="14" font-weight="500" fill="#7d7993" x="280" y="30" text-anchor="middle">rjvisuals26 — system.js</text>
+
+    <!-- Live Compilation Script Core Code Content -->
+    <g transform="translate(45, 110)" class="font-mono" font-size="17" font-weight="500" letter-spacing="0.5">
+      
+      <!-- Code Line 1 -->
+      <g class="code-line-1">
+        <text fill="#ff2a74">const</text>
+        <text fill="#ffffff" x="60">developer</text>
+        <text fill="#00f3ff" x="155">=</text>
+        <text fill="#ffffff" x="175">{</text>
+      </g>
+
+      <!-- Code Line 2 -->
+      <g class="code-line-2" transform="translate(25, 40)">
+        <text fill="#ffffff">name:</text>
+        <text fill="#ff9f43" x="65">'RJ_Visuals'</text>
+        <text fill="#ffffff" x="185">,</text>
+      </g>
+
+      <!-- Code Line 3 -->
+      <g class="code-line-3" transform="translate(25, 80)">
+        <text fill="#ffffff">mission:</text>
+        <text fill="#00e676" x="95">'Bridging UI Elegance &amp; Fast Code'</text>
+        <text fill="#ffffff" x="435">,</text>
+      </g>
+
+      <!-- Code Line 4 -->
+      <g class="code-line-4" transform="translate(25, 120)">
+        <text fill="#b026ff">builtWith:</text>
+        <text fill="#ffffff" x="105">[</text>
+        <text fill="#00f3ff" x="115">'React'</text>
+        <text fill="#ffffff" x="185">,</text>
+        <text fill="#00f3ff" x="195">'Figma'</text>
+        <text fill="#ffffff" x="265">,</text>
+        <text fill="#00f3ff" x="275">'Node'</text>
+        <text fill="#ffffff" x="335">]</text>
+      </g>
+
+      <!-- Code Line 5 (Trailing Closing brackets) -->
+      <g class="code-line-4" transform="translate(0, 160)">
+        <text fill="#ffffff">};</text>
+      </g>
+
+      <!-- Real-time Console Logging Action Line -->
+      <g transform="translate(0, 230)">
+        <text fill="#7d7993" font-style="italic">// Executing core initialization...</text>
+        
+        <text fill="#b026ff" y="45">console</text>
+        <text fill="#ffffff" x="70" y="45">.</text>
+        <text fill="#00f3ff" x="80" y="45">log</text>
+        <text fill="#ffffff" x="110" y="45">(</text>
+        <text fill="#ff9f43" x="120" y="45">`Status: Fully Operational`</text>
+        <text fill="#ffffff" x="390" y="45">);</text>
+        
+        <!-- Live Terminal Blinking Interactive Cursor -->
+        <rect class="cursor" x="412" y="27" width="10" height="20"/>
+      </g>
+    </g>
+
+    <!-- Bottom Embedded Status Tray Bar Overlay -->
+    <path d="M 0,470 Q 280,480 560,470 L 560,510 L 0,510 Z" fill="#110c22" fill-opacity="0.9"/>
+    <line x1="0" y1="470" x2="560" y2="470" stroke="url(#glass-edge)" stroke-width="1.2"/>
+    <text class="font-sans class-status" font-size="12" font-weight="700" fill="#00e676" x="35" y="494" letter-spacing="1">● LIVE BUILD SUCCESSFUL</text>
+    <text class="font-mono" font-size="12" font-weight="500" fill="#534f66" x="525" y="494" text-anchor="end">UTF-8</text>
+  </g>
+
+  <!-- ================= RUNTIME CORNER DECORATION ACENTS ================= -->
+  
+  <!-- Sleek Glowing Neon Frame Borders -->
+  <rect x="25" y="25" width="1230" height="690" rx="20" fill="none" stroke="url(#neon-gradient)" stroke-width="2" opacity="0.4"/>
+  
+  <!-- Top Right Stylized Status Indicator Crosshair/Star sign -->
+  <g class="neon-sign" transform="translate(1210, 55)" opacity="0.8">
+    <path d="M-15,0 L15,0 M0,-15 L0,15" stroke="#ff2a74" stroke-width="3"/>
+    <circle cx="0" cy="0" r="5" fill="#ffffff"/>
+  </g>
+</svg>
