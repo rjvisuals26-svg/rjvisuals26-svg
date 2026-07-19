@@ -66,8 +66,8 @@
 
   <!-- ================= RIGHT COLUMN: GRAPHIC ================= -->
   <!-- High-Definition Embedded Character Graphic Asset -->
-  <image href="https://i.ibb.co/zVk5Zdh3/Untitled-20-July-2026-at-00-41-28.png" 
-         xlink:href="https://i.ibb.co/zVk5Zdh3/Untitled-20-July-2026-at-00-41-28.png"
+  <image href="character-graphic.png" 
+         xlink:href="character-graphic.png"
          x="720" y="100" width="700" height="850" preserveAspectRatio="xMidYMidMeet"/>
 
   <!-- ================= TOP LEFT: HEADER & QUOTE ================= -->
