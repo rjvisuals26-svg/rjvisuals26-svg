@@ -1,129 +1,240 @@
-<div align="center">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1020" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient Theme -->
+    <radialGradient id="bg-glow" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#181135" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#05030d"/>
+    </radialGradient>
+    <linearGradient id="neon-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f3ff"/>
+      <stop offset="50%" stop-color="#d6a4ff"/>
+      <stop offset="100%" stop-color="#ff2a74"/>
+    </linearGradient>
+    <linearGradient id="glass-edge" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02"/>
+    </linearGradient>
 
-<!-- HEADER -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:ffdee9,20:fec7ff,40:d6a4ff,60:c084fc,80:8b5cf6,100:7c3aed&height=280&section=header&text=Rukhsar%20Jabeen&fontSize=70&fontColor=ffffff&fontAlignY=40&fontAlign=50&desc=Full-Stack%20Developer%20%7C%20UI%2FUX%20Designer%20%7C%20Freelance%20Creative&descAlignY=60&descSize=18&descFontColor=fce7f3" />
+    <!-- Visual Glow Filters -->
+    <filter id="subtle-glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="pink-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
 
-<br/>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&amp;family=Inter:wght@400;600;700;800&amp;family=Oooh+Baby&amp;family=Poppins:wght@500;700&amp;display=swap');
+      
+      .font-sans { font-family: 'Inter', system-ui, sans-serif; }
+      .font-mono { font-family: 'Fira Code', monospace; }
+      .font-cute { font-family: 'Oooh Baby', cursive, sans-serif; }
+      .font-quote { font-family: 'Poppins', sans-serif; }
+      
+      @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+      .cursor { animation: blink 1s infinite; fill: #00f3ff; }
 
-<p style="font-family: 'Poppins', sans-serif; font-size: 15px; color: #c084fc;">
-Crafting soft, aesthetic, and scalable digital experiences with a blend of design & engineering.
-</p>
+      @keyframes pulse-heart {
+        0%, 100% { transform: scale(1); opacity: 0.8; }
+        50% { transform: scale(1.15); opacity: 1; filter: drop-shadow(0 0 12px #ff2a74); }
+      }
+      .cute-heart { 
+        animation: pulse-heart 3s ease-in-out infinite; 
+        transform-origin: 370px 125px; 
+      }
+    </style>
+  </defs>
 
-</div>
+  <!-- Canvas Background -->
+  <rect width="1440" height="1020" fill="#05030d"/>
+  <rect width="1440" height="1020" fill="url(#bg-glow)"/>
 
----
+  <!-- Subtle Ambient Grid Texture -->
+  <g opacity="0.015" stroke="#ffffff" stroke-width="1">
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 1440 0 L 0 0 0 40" fill="none"/>
+    </pattern>
+    <rect width="1440" height="1020" fill="url(#grid)"/>
+  </g>
 
-<!-- PREMIUM ANIMATED INTERFACE FRAMEWORKS -->
-<p align="center">
-  <img src="./banner.svg?v=1" alt="Developer Banner" width="100%">
-</p>
+  <!-- ================= COLUMN 1: CHARACTER & BIOGRAPHY (LEFT) ================= -->
+  
+  <!-- Character Illustration Link Source -->
+  <image href="https://i.ibb.co/zVk5Zdh3/Untitled-20-July-2026-at-00-41-28.png" 
+         x="25" y="140" width="530" height="530" preserveAspectRatio="xMidYMidMeet"/>
 
-<table border="0" width="100%" cellpadding="0" cellspacing="0">
-  <tr>
-    <td width="42%" align="center" valign="top">
-      <img src="./lanyard.svg?v=1" alt="ID Lanyard" width="100%">
-    </td>
-    <td width="58%" align="center" valign="top">
-      <img src="./stats.svg?v=1" alt="Dev Stats" width="100%">
-    </td>
-  </tr>
-</table>
+  <!-- Biography Paragraph Card Structure -->
+  <g transform="translate(60, 690)">
+    <rect width="450" height="250" rx="16" fill="#080615" fill-opacity="0.7" stroke="url(#glass-edge)" stroke-width="1"/>
+    <text class="font-sans" font-size="13" font-weight="700" fill="#ff2a74" x="20" y="30" letter-spacing="1">WHO I AM</text>
+    <g transform="translate(20, 58)" class="font-sans" font-size="12" font-weight="600" fill="#ffffff" opacity="0.85">
+      <text y="0" font-weight="700">I'm Rukhsar Asad,</text>
+      <text y="24">a Computer Science student and developer passionate</text>
+      <text y="44">about creating beautiful, functional digital experiences.</text>
+      <text y="64">I combine modern development practices with a strong eye</text>
+      <text y="84">for design to build websites and applications that are simple,</text>
+      <text y="104">elegant, and user-focused.</text>
+    </g>
+  </g>
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/rjvisuals26-svg/rjvisuals26-svg/output/github-contribution-grid-snake.svg" alt="Github Snake Game" width="100%">
-</p>
+  <!-- Top Left Keep Coding Branding Box -->
+  <g transform="translate(60, 60)" filter="url(#subtle-glow)">
+    <rect width="200" height="65" rx="12" fill="#0c071d" fill-opacity="0.8" stroke="#ff2a74" stroke-width="1.5"/>
+    <text class="font-mono" font-size="11" font-weight="600" fill="#9d9aa8" x="100" y="28" text-anchor="middle" letter-spacing="1.5">&lt;/&gt; KEEP CODING</text>
+    <text class="font-mono" font-size="11" font-weight="600" fill="#b026ff" x="100" y="46" text-anchor="middle" letter-spacing="1.5">KEEP GROWING</text>
+  </g>
 
----
+  <!-- ================= COLUMN 2: HEADER & TECH DETAILS (MIDDLE) ================= -->
+  <g transform="translate(610, 80)">
+    <text class="font-mono" font-size="16" fill="#ff2a74" opacity="0.9">rukhsar@dev:<tspan fill="#00f3ff">~</tspan><tspan fill="#ffffff">$ cat README.md</tspan></text>
+    <rect x="252" y="-14" width="10" height="18" fill="#9d9aa8" opacity="0.5"/>
+    
+    <text class="font-sans" font-size="20" font-weight="600" fill="#ffffff" y="45">Hi there! I'm</text>
+    
+    <!-- Script Name Typography Layout -->
+    <text class="font-cute" font-size="68" font-weight="700" fill="#ff2a74" y="115" filter="url(#pink-glow)">Rukhsar Jabeen</text>
+    
+    <!-- Pulsing Neon Heart Core Vector Graphic -->
+    <path class="cute-heart" fill="#ff2a74" d="M12,5 C8.5,1 2,1 2,6 C2,10 6,14 12,19 C18,14 22,10 22,6 C22,1 L15.5,1 L12,5 Z" transform="translate(325, 78) scale(1.2)"/>
 
-## ✨ About Me
+    <text class="font-sans" font-size="13" font-weight="700" fill="#b026ff" y="155" letter-spacing="2.5">FRONTEND DEVELOPER &amp; UI/UX ENTHUSIAST</text>
+    <line x1="0" y1="175" x2="415" y2="175" stroke="#1f1a3a" stroke-width="1.5"/>
+  </g>
 
-I am **Rukhsar Jabeen**, a **freelance Full-Stack Developer & UI/UX Designer** specializing in aesthetic, modern, and user-centered digital products.
+  <!-- Strip Comment Quote Block -->
+  <g transform="translate(610, 275)">
+    <rect width="400" height="75" rx="12" fill="#0d091f" fill-opacity="0.6" stroke="url(#glass-edge)" stroke-width="1"/>
+    <text class="font-sans" font-size="44" font-weight="800" fill="#ff2a74" opacity="0.3" x="12" y="45">“</text>
+    <text class="font-sans" font-size="13" font-weight="600" fill="#9d9aa8" x="38" y="32" text-rendering="geometricPrecision">I build responsive, user-friendly and impactful</text>
+    <text class="font-sans" font-size="13" font-weight="600" fill="#9d9aa8" x="38" y="52" text-rendering="geometricPrecision">web experiences.</text>
+    <circle cx="380" cy="55" r="4" fill="#ff2a74"/>
+  </g>
 
-I create **visually soft yet technically strong applications** that balance design beauty with real-world performance.
+  <!-- 12-Pill Tech Stack Panel -->
+  <g transform="translate(610, 395)">
+    <text class="font-mono" font-size="13" font-weight="600" fill="#00f3ff" letter-spacing="1">&lt;/&gt; TECH STACK</text>
+    
+    <!-- Row 1 -->
+    <g transform="translate(0, 22)">
+      <rect width="80" height="32" rx="10" fill="#120e29" stroke="url(#glass-edge)" stroke-width="1"/>
+      <text class="font-sans" font-size="12" font-weight="600" fill="#ff9f43" x="40" y="20" text-anchor="middle">HTML5</text>
+    </g>
+    <g transform="translate(90, 22)">
+      <rect width="70" height="32" rx="10" fill="#120e29" stroke="url(#glass-edge)" stroke-width="1"/>
+      <text class="font-sans" font-size="12" font-weight="600" fill="#00f3ff" x="35" y="20" text-anchor="middle">CSS3</text>
+    </g>
+    <g transform="translate(170, 22)">
+      <rect width="100" height="32" rx="10" fill="#120e29" stroke="url(#glass-edge)" stroke-width="1"/>
+      <text class="font-sans" font-size="12" font-weight="600" fill="#ffbd2e" x="50" y="20" text-anchor="middle">JavaScript</text>
+    </g>
+    <g transform="translate(280, 22)">
+      <rect width="85" height="32" rx="10" fill="#120e29" stroke="url(#glass-edge)" stroke-width="1"/>
+      <text class="font-sans" font-size="12" font-weight="600" fill="#00f3ff" x="42.5" y="20" text-anchor="middle">React.js</text>
+    </g>
+    <g transform="translate(375, 22)">
+      <rect width="85" height="32" rx="10" fill="#120e29" stroke="url(#glass-edge)" stroke-width="1"/>
+      <text class="font-sans" font-size="12" font-weight="600" fill="#ff2a74" x="42.5" y="20" text-anchor="middle">Firebase</text>
+    </g>
+    <g transform="translate(470, 22)">
+      <rect width="60" height="32" rx="10" fill="#120e29" stroke="url(#glass-edge)" stroke-width="1"/>
+      <text class="font-sans" font-size="12" font-weight="600" fill="#ffffff" opacity="0.8" x="30" y="20" text-anchor="middle">C++</text>
+    </g>
 
-> “I don’t just build apps—I design experiences that feel alive.”
+    <!-- Row 2 -->
+    <g transform="translate(0, 66)">
+      <rect width="60" height="32" rx="10" fill="#120e29" stroke="url(#glass-edge)" stroke-width="1"/>
+      <text class="font-sans" font-size="12" font-weight="600" fill="#00e676" x="30" y="20" text-anchor="middle">SQL</text>
+    </g>
+    <g transform="translate(70, 66)">
+      <rect width="70" height="32" rx="10" fill="#120e29" stroke="url(#glass-edge)" stroke-width="1"/>
+      <text class="font-sans" font-size="12" font-weight="600" fill="#b026ff" x="35" y="20" text-anchor="middle">Figma</text>
+    </g>
+    <g transform="translate(140, 66)">
+      <rect width="80" height="32" rx="10" fill="#120e29" stroke="url(#glass-edge)" stroke-width="1"/>
+      <text class="font-sans" font-size="12" font-weight="600" fill="#00f3ff" x="40" y="20" text-anchor="middle">Netlify</text>
+    </g>
+    <g transform="translate(230, 66)">
+      <rect width="80" height="32" rx="10" fill="#120e29" stroke="url(#glass-edge)" stroke-width="1"/>
+      <text class="font-sans" font-size="12" font-weight="600" fill="#00f3ff" x="40" y="20" text-anchor="middle">Netlify</text>
+    </g>
+    <g transform="translate(310, 66)">
+      <rect width="95" height="32" rx="10" fill="#120e29" stroke="url(#glass-edge)" stroke-width="1"/>
+      <text class="font-sans" font-size="12" font-weight="600" fill="#ff9f43" x="47.5" y="20" text-anchor="middle">REST APIs</text>
+    </g>
+    <g transform="translate(415, 66)">
+      <rect width="105" height="32" rx="10" fill="#120e29" stroke="url(#glass-edge)" stroke-width="1"/>
+      <text class="font-sans" font-size="12" font-weight="600" fill="#d6a4ff" x="52.5" y="20" text-anchor="middle">Git &amp; GitHub</text>
+    </g>
+    <g transform="translate(0, 110)">
+      <rect width="100" height="32" rx="10" fill="#120e29" stroke="url(#glass-edge)" stroke-width="1"/>
+      <text class="font-sans" font-size="12" font-weight="600" fill="#00f3ff" x="50" y="20" text-anchor="middle">Electron.js</text>
+    </g>
+  </g>
 
----
+  <!-- Terminal Closure Log Footer -->
+  <g transform="translate(610, 580)">
+    <rect width="450" height="195" rx="16" fill="#080615" fill-opacity="0.7" stroke="url(#glass-edge)" stroke-width="1"/>
+    <g transform="translate(20, 32)" class="font-mono" font-size="13">
+      <text fill="#ff2a74">rukhsar@dev:<tspan fill="#00f3ff">~</tspan><tspan fill="#ffffff">$ echo "Thanks!"</tspan></text>
+      <text y="26" fill="#00e676">Thanks for visiting! 😊</text>
+      <text y="52" fill="#b026ff">Happy Coding! 💜 _</text>
+      <rect class="cursor" x="126" y="40" width="6" height="14"/>
+    </g>
+  </g>
 
-## 💜 Core Expertise
+  <!-- ================= COLUMN 3: CODE & CONNECT (RIGHT SIDE) ================= -->
+  
+  <!-- Interactive about.jsx Code Window -->
+  <g transform="translate(1040, 60)">
+    <rect width="360" height="340" rx="16" fill="#0b0818" fill-opacity="0.85" stroke="url(#glass-edge)" stroke-width="1.5" filter="url(#subtle-glow)"/>
+    <rect width="360" height="38" rx="16" fill="#110d24"/>
+    <rect width="360" height="16" y="22" fill="#110d24"/>
+    <line x1="0" y1="38" x2="360" y2="38" stroke="url(#glass-edge)"/>
+    <circle cx="22" cy="19" r="5.5" fill="#ff5f56"/>
+    <circle cx="38" cy="19" r="5.5" fill="#ffbd2e"/>
+    <circle cx="54" cy="19" r="5.5" fill="#27c93f"/>
+    <text class="font-mono" font-size="12" fill="#7d7993" x="180" y="23" text-anchor="middle">about.jsx</text>
 
-- Full-Stack Web Development (MERN / Modern JS Stack)
-- Aesthetic UI/UX Design Systems
-- Scalable Backend Architecture & REST APIs
-- Database Design & Optimization (MySQL / MongoDB)
-- Brand-Based Web Design for Personal & Business Identity
-- Performance-Focused Frontend Engineering
+    <g transform="translate(25, 72)" class="font-mono" font-size="12" font-weight="500" letter-spacing="0.2">
+      <text fill="#ff2a74">const <tspan fill="#00f3ff">me</tspan> <tspan fill="#ffffff">=</tspan> <tspan fill="#ffffff">{</tspan></text>
+      <text y="22" x="15" fill="#b026ff">name: <tspan fill="#ff9f43">"Rukhsar Jabeen"</tspan>,</text>
+      <text y="44" x="15" fill="#b026ff">role: <tspan fill="#ff9f43">"Frontend Developer"</tspan>,</text>
+      <text y="66" x="15" fill="#b026ff">focus: <tspan fill="#ffffff">[</tspan><tspan fill="#00f3ff">"Web"</tspan><tspan fill="#ffffff">, </tspan><tspan fill="#00f3ff">"UI/UX"</tspan><tspan fill="#ffffff">],</tspan></text>
+      <text y="88" x="15" fill="#b026ff">passion: <tspan fill="#ff9f43">"Building designs"</tspan>,</text>
+      <text y="110" x="15" fill="#b026ff">aesthetic: <tspan fill="#ff9f43">"Soft &amp; clean"</tspan>,</text>
+      <text y="132" x="15" fill="#b026ff">learning: <tspan fill="#ff9f43">"Full-Stack &amp; AI"</tspan>,</text>
+      <text y="154" x="15" fill="#b026ff">funFact: <tspan fill="#ff9f43">"Code at night 🌙"</tspan></text>
+      <text y="176" fill="#ffffff">};</text>
+      <text y="212" fill="#6d6a78" font-style="italic">// Code is my art, logic is my superpower.</text>
+    </g>
+  </g>
 
----
+  <!-- Connect with Me Terminal Box -->
+  <g transform="translate(1040, 425)">
+    <rect width="360" height="300" rx="14" fill="#090617" fill-opacity="0.9" stroke="url(#glass-edge)" stroke-width="1"/>
+    <text class="font-sans" font-size="13" font-weight="700" fill="#00f3ff" x="20" y="30" letter-spacing="1">CONNECT WITH ME</text>
+    <g transform="translate(20, 68)" class="font-mono" font-size="12">
+      <text fill="#ffffff">> @rukhsar-jabeen</text>
+      <text y="26" fill="#b026ff">> /rukhsar-jabeen</text>
+      <text y="52" fill="#ff2a74">> rjvisuals26@gmail.com</text>
+      <text y="78" fill="#d6a4ff">> arts.by.rj</text>
+    </g>
+  </g>
 
-## 💻 Tech Stack
+  <!-- Motivational Quote Repositioned Under Connect With Me -->
+  <g transform="translate(1040, 760)" filter="url(#subtle-glow)">
+    <text class="font-quote" font-size="22" font-weight="700" fill="#ffffff" opacity="0.95">From imagination to implementation.</text>
+    <line x1="0" y1="14" x2="360" y2="14" stroke="url(#neon-gradient)" stroke-width="2.5" opacity="0.4" />
+  </g>
 
-**Frontend**
-React.js • Next.js • TypeScript • Tailwind CSS • Framer Motion
-
-**Backend**
-Node.js • Express.js • Firebase • REST APIs
-
-**Database**
-MySQL • MongoDB
-
-**Design & Tools**
-Figma • Adobe XD • Git/GitHub • Postman • Vercel • Netlify
-
----
-
-## 🌷 Services I Offer
-
-✔ Aesthetic Portfolio Websites  
-✔ Full-Stack Web Applications  
-✔ E-Commerce Platforms  
-✔ Admin Dashboards  
-✔ UI/UX Design & Prototyping  
-✔ API Development & Integration  
-
-Every project is crafted with:
-- Soft modern UI aesthetics  
-- Clean and scalable code  
-- Mobile-first responsiveness  
-- Smooth user experience  
-
----
-
-## 💫 Featured Work
-
-- Elegant E-Commerce Platforms  
-- Minimal & aesthetic portfolio websites  
-- Interactive dashboards with modern UI  
-- Full-stack web apps with clean architecture  
-
----
-
-## 💌 Let’s Connect
-
-<p align="center">
-
-<a href="mailto:rjvisuals26@gmail.com">
-  <img src="https://img.shields.io/badge/Email-Soft%20Contact-f472b6?style=for-the-badge&logo=gmail&logoColor=white" />
-</a>
-
-<a href="https://www.linkedin.com/in/rukhsar-jabeen">
-  <img src="https://img.shields.io/badge/LinkedIn-Professional-c084fc?style=for-the-badge&logo=linkedin&logoColor=white" />
-</a>
-
-<a href="https://www.instagram.com/rj_v.isuals">
-  <img src="https://img.shields.io/badge/Instagram-Aesthetic-f9a8d4?style=for-the-badge&logo=instagram&logoColor=white" />
-</a>
-
-<a href="https://mypf786.netlify.app/">
-  <img src="https://img.shields.io/badge/Portfolio-View%20Work-8b5cf6?style=for-the-badge&logo=vercel&logoColor=white" />
-</a>
-
-</p>
-
----
-
-<div align="center">
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:ffdee9,20:fec7ff,40:d6a4ff,60:c084fc,80:8b5cf6,100:7c3aed&height=140&section=footer" />
-
-</div>
+  <!-- Outer Neon Synth Frame Borders Wrapper -->
+  <rect x="25" y="25" width="1390" height="970" rx="24" fill="none" stroke="url(#neon-gradient)" stroke-width="2" opacity="0.25"/>
+</svg>
