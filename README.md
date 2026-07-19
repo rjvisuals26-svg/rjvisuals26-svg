@@ -76,6 +76,9 @@ Every project is crafted with:
 
 ---
 <p align="center">
+  <img src="https://raw.githubusercontent.com/rjvisuals26-svg/rjvisuals26-svg/output/github-contribution-grid-snake.svg" alt="Github Snake Game" width="100%">
+</p>
+<p align="center">
   <img src="./lanyard.svg" alt="Developer ID Lanyard" width="45%">
 </p>
 <p align="center">
