@@ -13,6 +13,28 @@ Crafting soft, aesthetic, and scalable digital experiences with a blend of desig
 
 ---
 
+<!-- PREMIUM ANIMATED INTERFACE FRAMEWORKS -->
+<p align="center">
+  <img src="./banner.svg?v=1" alt="Developer Banner" width="100%">
+</p>
+
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="42%" align="center" valign="top">
+      <img src="./lanyard.svg?v=1" alt="ID Lanyard" width="100%">
+    </td>
+    <td width="58%" align="center" valign="top">
+      <img src="./stats.svg?v=1" alt="Dev Stats" width="100%">
+    </td>
+  </tr>
+</table>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/rjvisuals26-svg/rjvisuals26-svg/output/github-contribution-grid-snake.svg" alt="Github Snake Game" width="100%">
+</p>
+
+---
+
 ## ✨ About Me
 
 I am **Rukhsar Jabeen**, a **freelance Full-Stack Developer & UI/UX Designer** specializing in aesthetic, modern, and user-centered digital products.
@@ -75,25 +97,7 @@ Every project is crafted with:
 - Full-stack web apps with clean architecture  
 
 ---
-<p align="center">
-  <img src="https://raw.githubusercontent.com/rjvisuals26-svg/rjvisuals26-svg/output/github-contribution-grid-snake.svg" alt="Github Snake Game" width="100%">
-</p>
-<p align="center">
-  <img src="./lanyard.svg" alt="Developer ID Lanyard" width="45%">
-</p>
-<table border="0" width="100%" cellpadding="0" cellspacing="0">
-  <tr>
-    <td width="45%" align="center" valign="top">
-      <img src="./lanyard.svg" alt="ID Lanyard" width="100%">
-    </td>
-    <td width="55%" align="center" valign="top">
-      <img src="./stats.svg" alt="Dev Stats" width="100%">
-    </td>
-  </tr>
-</table>
-<p align="center">
-  <img src="./banner.svg" alt="Developer Banner" width="100%">
-</p>
+
 ## 💌 Let’s Connect
 
 <p align="center">
