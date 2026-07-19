@@ -81,6 +81,16 @@ Every project is crafted with:
 <p align="center">
   <img src="./lanyard.svg" alt="Developer ID Lanyard" width="45%">
 </p>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="45%" align="center" valign="top">
+      <img src="./lanyard.svg" alt="ID Lanyard" width="100%">
+    </td>
+    <td width="55%" align="center" valign="top">
+      <img src="./stats.svg" alt="Dev Stats" width="100%">
+    </td>
+  </tr>
+</table>
 <p align="center">
   <img src="./banner.svg" alt="Developer Banner" width="100%">
 </p>
