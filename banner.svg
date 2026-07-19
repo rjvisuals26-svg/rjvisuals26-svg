@@ -78,10 +78,10 @@
     <text class="font-sans" font-size="22" font-weight="700" fill="#ffffff" y="55">Hi there! 👋 I'm</text>
     
     <!-- Script Name Typography Layout -->
-    <text class="font-cute" font-size="85" font-weight="700" fill="#ff2a74" y="155" filter="url(#pink-glow)">Rukhsar Jabeen</text>
+    <text class="font-cute" font-size="76" font-weight="700" fill="#ff2a74" y="155" filter="url(#pink-glow)">Rukhsar Jabeen</text>
     
     <!-- Pulsing Neon Heart Core Vector Graphic -->
-    <path class="cute-heart" fill="#ff2a74" d="M12,5 C8.5,1 2,1 2,6 C2,10 6,14 12,19 C18,14 22,10 22,6 C22,1 L15.5,1 L12,5 Z" transform="translate(415, 110) scale(1.4)"/>
+    <path class="cute-heart" fill="#ff2a74" d="M12,5 C8.5,1 2,1 2,6 C2,10 6,14 12,19 C18,14 22,10 22,6 C22,1 L15.5,1 L12,5 Z" transform="translate(370, 110) scale(1.4)"/>
 
     <text class="font-sans" font-size="14" font-weight="700" fill="#b026ff" y="215" letter-spacing="2.5">FRONTEND DEVELOPER &amp; UI/UX ENTHUSIAST</text>
     <line x1="0" y1="235" x2="445" y2="235" stroke="#1f1a3a" stroke-width="1.5"/>
@@ -97,7 +97,7 @@
   </g>
 
   <!-- ================= TOP MIDDLE: CODE WINDOW ================= -->
-  <g transform="translate(560, 40)">
+  <g transform="translate(590, 40)">
     <rect width="440" height="310" rx="16" fill="#0b0818" fill-opacity="0.85" stroke="url(#glass-edge)" stroke-width="1.5" filter="url(#subtle-glow)"/>
     <rect width="440" height="38" rx="16" fill="#110d24"/>
     <rect width="440" height="16" y="22" fill="#110d24"/>
