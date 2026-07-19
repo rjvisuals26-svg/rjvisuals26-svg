@@ -75,7 +75,9 @@ Every project is crafted with:
 - Full-stack web apps with clean architecture  
 
 ---
-
+<p align="center">
+  <img src="./banner.svg" alt="Developer Banner" width="100%">
+</p>
 ## 💌 Let’s Connect
 
 <p align="center">
