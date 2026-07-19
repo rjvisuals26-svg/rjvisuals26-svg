@@ -66,7 +66,7 @@
 
   <!-- ================= RIGHT COLUMN: GRAPHIC ================= -->
   <!-- High-Definition Embedded Character Graphic Asset -->
-  <image href="url(https://i.ibb.co/zVk5Zdh3/Untitled-20-July-2026-at-00-41-28.png)" 
+  <image href="https://i.ibb.co/zVk5Zdh3/Untitled-20-July-2026-at-00-41-28.png" 
          x="720" y="100" width="700" height="850" preserveAspectRatio="xMidYMidMeet"/>
 
   <!-- ================= TOP LEFT: HEADER & QUOTE ================= -->
@@ -115,7 +115,7 @@
       <text y="116" x="80" fill="#ff9f43">that live on the web 💻✨"<tspan fill="#ffffff">,</tspan></text>
       <text y="140" x="15" fill="#b026ff">currentlyLearning: <tspan fill="#ff9f43">"Full-Stack &amp; AI 🚀"</tspan><tspan fill="#ffffff">,</tspan></text>
       <text y="164" x="15" fill="#b026ff">funFact: <tspan fill="#ff9f43">"I love coding at night 🌙</tspan></text>
-      <text y="184" x="80" fill="#ff9f43">and pink aesthetics 💗"</tspan></text>
+      <text y="184" x="80" fill="#ff9f43">and pink aesthetics 💗"</text>
       <text y="208" fill="#ffffff">};</text>
       <text y="236" fill="#6d6a78" font-style="italic">// Code is my art, logic is my superpower.</text>
     </g>
@@ -198,34 +198,6 @@
     </g>
   </g>
 
-  <!-- ================= BOTTOM MIDDLE: GITHUB STATS ================= -->
-  <g transform="translate(550, 600)">
-    <rect width="360" height="190" rx="16" fill="#080615" fill-opacity="0.7" stroke="url(#glass-edge)" stroke-width="1"/>
-    <text class="font-sans" font-size="15" font-weight="700" fill="#00f3ff" x="20" y="30" letter-spacing="1">📊 GITHUB STATS</text>
-    <line x1="20" y1="45" x2="340" y2="45" stroke="url(#glass-edge)" stroke-width="1"/>
-    <g transform="translate(0, 80)" class="font-sans" font-size="18" font-weight="700" text-anchor="middle">
-      <g transform="translate(60, 0)">
-        <text fill="#ffbd2e" font-size="24" y="0">⭐</text>
-        <text fill="#ffffff" y="35">50+</text>
-        <text fill="#9d9aa8" font-size="12" font-weight="500" y="55">Stars</text>
-      </g>
-      <g transform="translate(140, 0)">
-        <text fill="#b026ff" font-size="24" y="0">🔱</text>
-        <text fill="#ffffff" y="35">25+</text>
-        <text fill="#9d9aa8" font-size="12" font-weight="500" y="55">Forks</text>
-      </g>
-      <g transform="translate(220, 0)">
-        <text fill="#00f3ff" font-size="24" y="0">📄</text>
-        <text fill="#ffffff" y="35">15+</text>
-        <text fill="#9d9aa8" font-size="12" font-weight="500" y="55">Repos</text>
-      </g>
-      <g transform="translate(300, 0)">
-        <text fill="#ff2a74" font-size="24" y="0">👥</text>
-        <text fill="#ffffff" y="35">10+</text>
-        <text fill="#9d9aa8" font-size="12" font-weight="500" y="55">Contribs</text>
-      </g>
-    </g>
-  </g>
 
   <!-- ================= VERY BOTTOM LEFT: CONNECT WITH ME ================= -->
   <g transform="translate(50, 815)">
